@@ -1,0 +1,12 @@
+@startuml
+start
+:系统显示归还界面;
+:用户选择归还书籍;
+:系统获得书籍信息、参与者信息并提示用户;
+if (参与者确认？) then (yes)
+  :还书成功;
+else (no)
+  :取消还书;
+endif
+stop
+@enduml

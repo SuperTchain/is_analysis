@@ -1,0 +1,12 @@
+@startuml
+start
+:系统显示更新信息;
+:参与者选择更新;
+:系统更新;
+ if (更新成功？) then (yes)
+  :提示更新成功;
+else (no)
+  :提示更新失败;
+endif
+stop
+@enduml

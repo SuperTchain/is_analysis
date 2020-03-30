@@ -1,0 +1,12 @@
+@startuml
+start
+:登陆图书管理系统;
+:系统显示预定界面;
+:参与者取消预定图书;
+if (取消成功) then (yes)
+  :系统返回取消成功;
+else (no)
+  :系统返回没有预定书籍;
+endif
+stop
+@enduml

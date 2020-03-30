@@ -1,0 +1,18 @@
+@startuml
+start
+:登陆图书管理系统;
+:系统显示搜索界面;
+:参与者输入查询图书名字;
+if (默认查询方式？) then (yes)
+  :按图书名称查询;
+else (no)
+  :按图书编码查询;
+endif
+:查询;
+if (有查询结果？) then (yes)
+  :系统返回查找信息;
+else (no)
+  :系统返回没有找到书籍信息;
+endif
+stop
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+start
+:登陆图书管理系统;
+:系统显示借阅信息界面;
+:参与者输入自己ID号;
+if (查询成功) then (yes)
+  :系统返回借阅信息;
+else (no)
+  :系统返回没有借阅书籍;
+endif
+stop
+@enduml

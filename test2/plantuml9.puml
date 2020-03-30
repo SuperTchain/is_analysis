@@ -1,0 +1,12 @@
+@startuml
+start
+:系统显示查询界面;
+:参与者输入自己ID;
+:系统进行查询;
+ if (查询成功？) then (yes)
+  :返回查询信息;
+else (no)
+  :查询失败;
+endif
+stop
+@enduml
