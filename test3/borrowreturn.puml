@@ -1,0 +1,11 @@
+@startuml
+
+object BoughtReturn
+BoughtReturn : bookid=1
+BoughtReturn : bookname="dad"
+BoughtReturn : borrowreaderid=2
+BoughtReturn : borrowtime=2020-4-6
+BoughtReturn : returntime=2020-4-6
+BoughtReturn : returnreaderid=2
+
+@enduml

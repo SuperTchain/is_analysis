@@ -1,0 +1,93 @@
+@startuml
+class 读者{
+    -readerid:Long
+    -readername:String
+    -readeraddress:String
+    -readerphone:String
+    +borrowBook():Boolean
+    +returnBook():Boolean
+}
+
+class 图书管理员{
+    -bookadminid:Long
+    -bookadminname:String
+    -bookadminphone:String
+    +buyBook()：Boolean
+    +retrievalBorrow():Boolean
+    +retrievalReturm():Boolean
+    +manageReaderMessage():Reader
+}
+
+class 系统管理员{
+    -adminid:String
+    -adminname:String
+    -readeraccount:String
+    -readerpassword:String
+    -bookadminaccoint:String
+    -bookadminpassword:String
+    +manageSystem():Syetem
+    +manageReaderMessage():Reader
+    +manageBookAdminMessage():BookAdmin
+}
+
+class 查询{
+    -queryid:Long
+    -queryName:String
+    +queryBorrow()：Reader
+    +queryBook():Book
+}
+
+
+
+class 图书{
+    -bookid:Long
+    -bookname:String
+    -bookauthor:String
+    -bookstatus:Boolean
+    -bookprice:Long
+    -booknumber:Long
+    -bookborrownumber:Long
+    -bookreservenumber:Long
+    -bookdata:Date
+}
+class 预定{
+    -reverseid:Long
+    -reversename:String
+    +reserveBook():Boolean
+    -canclereserveid:Long
+    -canclereservename:String
+    +cancleReserve():Boolean
+}
+
+class 购入{
+    -booknum:Long
+    -bookid:Long
+    -bookprice:Long
+}
+
+class 借还{
+    -bookid:Long
+    -bookname:String
+    -borrowreaderid:Long
+    -borrowtime:Date
+    -returntime:Date
+    -returnreaderid:Long
+}
+class 读者管理{
+    -readeraccount:Long
+    -readerpassword:String
+    -readeraddress:String
+    -readerphone:String
+}
+
+查询  -- "1" 图书
+读者 "1" -- "*" 查询
+图书管理员 "1" -- "*" 查询
+预定 "*" -- 读者:has
+图书管理员 "1" -- "*" 购入
+图书管理员 "1" -- "*" 借还
+借还 "*" -- 读者:has
+读者管理 "*" -- "1" 图书管理员
+系统管理员 -- "*"图书管理员
+系统管理员 -- "*"读者
+@enduml

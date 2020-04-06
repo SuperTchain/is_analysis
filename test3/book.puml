@@ -1,0 +1,14 @@
+@startuml
+
+object Book
+Book : bookid=1
+Book : bookname="dad"
+Book : bookauthor="dadd"
+Book : bookstatus=true
+Book : bookprice="213"
+Book : booknumber="2123"
+Book : bookborrownumber=123
+Book : bookreservenumber=3434
+Book : bookdata:2021-4-6
+
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+
+object Bought
+Bought : booknum=1
+Bought : bookid=23
+Bought : bookprice=213
+
+@enduml

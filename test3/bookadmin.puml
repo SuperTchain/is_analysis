@@ -1,0 +1,8 @@
+@startuml
+
+object BookAdmin
+BookAdmin : bookadminid=1
+BookAdmin : bookadminname="dad"
+BookAdmin : bookadminphone="123"
+BookAdmin : bookadmiaddress="dading"
+@enduml

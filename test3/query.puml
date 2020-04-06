@@ -1,0 +1,7 @@
+@startuml
+
+object Query
+Query : queryid=1
+Query : queryName="dad"
+
+@enduml

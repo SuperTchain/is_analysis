@@ -1,0 +1,10 @@
+@startuml
+
+object SystemManager
+SystemManager : adminid=1
+SystemManager : adminname="dad"
+SystemManager : readeraccount=1213
+SystemManager : readerpassword="adad"
+SystemManager : bookadminaccoint=234
+SystemManager : bookadminpassword="dadad"
+@enduml

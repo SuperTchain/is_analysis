@@ -1,0 +1,9 @@
+@startuml
+
+object Reader
+Reader : readerid=123
+Reader : readername="Dummy“
+Reader : readeraddress="dada"
+Reader : readerphone="123141"
+
+@enduml
