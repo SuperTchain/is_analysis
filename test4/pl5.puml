@@ -1,0 +1,16 @@
+@startuml
+actor ": 读者" as 读者
+participant ": 预定记录" as 预定记录
+skinparam sequenceParticipant underline
+activate 读者
+读者->读者:登录
+读者->预定记录:查看预定记录
+activate 预定记录
+opt 没有预定记录
+预定记录-->读者:返回未查询到预定记录
+end
+opt 有预定记录
+读者->预定记录:删除预定记录
+end
+deactivate 读者
+@enduml

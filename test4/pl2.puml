@@ -1,0 +1,47 @@
+@startuml
+actor ": 图书管理员" as 图书管理员
+participant ": 读者" as 读者
+participant ": 图书目录" as 图书目录
+participant ": 图书信息" as 图书信息
+participant ": 借书记录" as 借书记录
+participant ": 逾期记录" as 逾期记录
+participant ": 罚款" as 罚款
+skinparam sequenceParticipant underline
+图书管理员 -> 读者:验证读者信息
+activate 读者
+deactivate 读者
+图书管理员 -> 图书目录:获取图书目录
+activate 图书管理员
+activate 图书目录
+图书目录 -> 图书信息:查询图书信息
+deactivate 图书目录
+activate 图书信息
+图书信息 -->图书管理员:返回信息
+deactivate 图书信息
+图书管理员 -> 借书记录:查询借书记录
+activate 借书记录
+借书记录 --> 图书管理员:返回借书记录
+deactivate 借书记录
+图书管理员 -> 图书目录:归还图书
+activate 图书目录
+图书目录 -> 图书信息:增加图书数量
+activate 图书信息
+deactivate 图书信息
+deactivate 图书目录
+图书管理员 -> 借书记录:记录还书时间
+activate 借书记录
+deactivate 借书记录
+opt 超过期限
+图书管理员 -> 逾期记录:记录过期记录
+activate 逾期记录
+逾期记录->罚款:罚款
+activate 罚款
+deactivate 罚款
+逾期记录 --> 图书管理员:返回过期信息
+deactivate 逾期记录
+图书管理员->读者:增加借书数量
+activate 读者
+deactivate 读者
+end
+deactivate 图书管理员
+@enduml

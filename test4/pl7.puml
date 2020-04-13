@@ -1,0 +1,15 @@
+@startuml
+actor ": 图书管理员" as 图书管理员
+participant ": 读者" as 读者
+skinparam sequenceParticipant underline
+activate 图书管理员
+图书管理员->图书管理员:登录
+图书管理员->读者:查询读者信息
+activate 读者
+读者-->图书管理员:返回读者信息
+deactivate 读者
+图书管理员->读者:管理读者信息
+activate 读者
+deactivate 读者
+deactivate 图书管理员
+@enduml

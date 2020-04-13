@@ -1,0 +1,23 @@
+@startuml
+actor ": 图书管理员" as 图书管理员
+participant ": 图书目录" as 图书目录
+participant ": 图书类型" as 图书类型
+skinparam sequenceParticipant underline
+activate 图书管理员
+图书管理员->图书管理员:登录
+图书管理员->图书目录:查询图书信息
+activate 图书目录
+图书目录->图书类型:图书类型查询
+activate 图书类型
+图书类型-->图书目录:返回图书类型信息
+deactivate 图书类型
+图书目录-->图书管理员:返回图书信息
+deactivate 图书目录
+图书管理员->图书目录:添加图书信息
+activate 图书目录
+图书目录->图书类型:图书类型信息修改
+activate 图书类型
+deactivate 图书类型
+deactivate 图书目录
+deactivate 图书管理员
+@enduml

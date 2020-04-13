@@ -1,0 +1,21 @@
+@startuml
+actor ": 系统管理员" as 系统管理员
+participant ": 系统" as 系统
+skinparam sequenceParticipant underline
+activate 系统管理员
+系统管理员->系统管理员:登录
+系统管理员->系统:查询系统信息
+activate 系统
+系统-->系统管理员:返回系统信息
+deactivate 系统
+系统管理员->系统:升级系统
+opt 升级成功
+activate 系统
+系统->系统管理员:升级成功
+end
+opt 升级失败
+系统->系统管理员:返回失败原因
+end
+deactivate 系统
+deactivate 系统管理员
+@enduml
