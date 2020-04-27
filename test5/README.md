@@ -92,6 +92,8 @@
 
 ### 2.1. 借书界面设计
 
+[借书界面地址请点击这里]( https://supertchain.github.io/is_analysis/test5/ui/index.html )
+
 ![借书界面](./Img/borrowbook.png)	
 
 ![成功界面](./Img/success.png)	
