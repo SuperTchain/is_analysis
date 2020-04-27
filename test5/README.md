@@ -106,7 +106,7 @@
 
 #### 功能一:查询图书
 
-- 请求地址： http://book/v1/api/findbook
+- 请求地址： http://book/v1/api/findBook
 - 请求方法：POST
 - 请求参数：
 
@@ -150,7 +150,7 @@
 #### 功能二:借出图书
 
 - 功能：借出图书
-- 请求地址： http://book/v1/api/borrowbook
+- 请求地址： http://book/v1/api/borrowBook
 - 请求方法：POST
 - 请求参数：
 
