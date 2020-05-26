@@ -1,0 +1,6 @@
+@startuml
+actor users
+database 数据库
+users->数据库:退出
+数据库->users:注销用户并返回到登录界面
+@enduml

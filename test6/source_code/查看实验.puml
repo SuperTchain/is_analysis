@@ -1,0 +1,11 @@
+@startuml
+title 基于GitHub的实验管理平台--查看实验用例的顺序图
+actor students
+students -> tests: 根据实验id查询实验
+tests ->students:返回结果
+deactivate students
+actor teachers
+teachers -> tests:根据实验id查询实验
+tests-->teachers:返回查询信息
+deactivate teachers
+@enduml

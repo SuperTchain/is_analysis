@@ -1,0 +1,16 @@
+@startuml
+title 基于GitHub的实验管理平台--查看课程用例的顺序图
+actor students
+actor teacher
+students -> major: 查询该学生的专业
+activate students
+major -> termInformation:根据专业id查询课程号
+termInformation->course:根据课程id查询课程
+course-->students:返回课程信息
+deactivate students
+teacher ->termInformation:查询老师选择的课程id
+termInformation ->course:根据课程id查询课程
+course->teacher:返回课程信息
+deactivate teacher
+
+@enduml

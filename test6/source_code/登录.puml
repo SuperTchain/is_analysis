@@ -1,0 +1,7 @@
+@startuml
+actor users
+database 数据库
+users->数据库:登录校验
+数据库->users:成功则登录
+数据库->登录界面:失败则返回登录界面
+@enduml

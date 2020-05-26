@@ -1,0 +1,6 @@
+@startuml
+actor users
+database 数据库存储
+users->数据库存储:修改用户信息
+数据库存储->users:返回修改信息
+@enduml

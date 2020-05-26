@@ -1,0 +1,5 @@
+@startuml
+actor users
+users->database:根据id查询数据库
+database-->users:返回查询结果
+@enduml

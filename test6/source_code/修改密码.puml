@@ -1,0 +1,6 @@
+@startuml
+actor users
+users ->database:修改密码
+database->users:返回修改消息
+
+@enduml

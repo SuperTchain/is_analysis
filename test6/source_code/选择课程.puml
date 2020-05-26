@@ -1,0 +1,13 @@
+@startuml
+actor teachers
+teachers->termInformation:根据老师id查询当前学期信息
+termInformation->course:选择课程并提交
+course->teachers:返回选课信息
+
+actor students
+students->major:查询学生专业
+major->termInformation:根据专业查询学期信息
+termInformation->course:选择课程并提交
+course->students:返回选课信息
+deactivate 学生
+@enduml

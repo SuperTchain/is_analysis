@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--评定成绩用例的顺序图
+actor teachers
+teachers -> students : 查询学生信息
+students -> tests: 根据学生id查询该学生的实验成绩
+tests -> testStandard:查询评分标准
+testStandard->grades:计算总成绩
+grades->teachers:返回查询结果
+teachers -> grades : 评定成绩并提交
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+title 基于GitHub的实验管理平台--查看学生信息用例的顺序图
+actor teachers
+teachers -> termInformation:根据老师id查询相关专业信息
+activate teachers
+termInformation->major:根据专业id查询专业信息
+major->students:根据专业信息查询学生信息
+students->teachers:返回查询信息
+deactivate teachers
+@enduml
