@@ -18,7 +18,7 @@
 
 ## 2.系统总体结构
 
-[系统总体结构设计参见](https://SuperTcahin.github.io/is_analysis_pages/test6/ui/主界面.html)
+[系统总体结构设计参见](https://SuperTcahin.github.io/is_analysis/test6/ui/主界面.html)
 
 ## 3.用例图设计 [源码](./source_code/example.puml)
 
