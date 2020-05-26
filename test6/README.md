@@ -52,7 +52,7 @@
 
 9.[查看课程用例](./example/查看课程.md)  [界面](https://SuperTchain.github.io/is_analysis/test6/ui/查看课程.html)
 
-10.[查看学生列表用例](./example/查看学生列表.md)  [界面](https://SuperTcahin.github.io/is_analysis/test6/ui/主界面.html)
+10.[查看学生列表用例](./example/查看学生列表.md)  [界面](https://SuperTchain.github.io/is_analysis/test6/ui/主界面.html)
 
 11.[查看成绩用例](./example/查看成绩.md)  [界面](https://SuperTchain.github.io/is_analysis/test6/ui/成绩查询.html)
 
